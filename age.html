@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age Calculator</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    input, button { margin: 5px 0; padding: 5px; }
+    #result { margin-top: 10px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Age Calculator</h2>
+
+  Name:<br><input id="name" placeholder="Enter your name"><br>
+  DOB:<br><input type="date" id="dob"><br>
+  <button onclick="showAge()">Calculate Age</button>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateAge(dob) {
+      const b = new Date(dob), t = new Date();
+      let age = t.getFullYear() - b.getFullYear();
+      if (t.getMonth() < b.getMonth() || (t.getMonth() === b.getMonth() && t.getDate() < b.getDate())) age--;
+      return age;
+    }
+
+    function showAge() {
+      const name = document.getElementById("name").value;
+      const dob = document.getElementById("dob").value;
+      if (!name || !dob) return document.getElementById("result").innerText = "Enter name & DOB.";
+      document.getElementById("result").innerText = `${name} age is ${calculateAge(dob)}`;
+    }
+  </script>
+</body>
+</html>
