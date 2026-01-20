@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generate OTP</title>
+</head>
+<body>
+  <h2>Random 6-Digit OTP Generator</h2>
+  <button onclick="generateOTP()">Generate OTP</button>
+  <div id="otp" style="margin-top:10px; font-weight:bold;"></div>
+
+  <script>
+    function generateOTP() {
+      const otp = Math.floor(100000 + Math.random() * 900000);
+      document.getElementById("otp").innerText = `Your OTP is: ${otp}`;
+    }
+  </script>
+</body>
+</html>
