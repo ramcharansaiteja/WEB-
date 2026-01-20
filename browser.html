@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browser Detection</title>
+</head>
+<body>
+  <h2>Browser Detector</h2>
+  <button onclick="detectBrowser()">Check Browser</button>
+  <div id="result" style="margin-top:10px; font-weight:bold;"></div>
+
+  <script>
+    function detectBrowser() {
+      const userAgent = navigator.userAgent;
+
+      let browser = "Unknown";
+
+      if (userAgent.includes("Chrome") && !userAgent.includes("Edg")) {
+        browser = "Chrome";
+      } else if (userAgent.includes("Firefox")) {
+        browser = "Firefox";
+      } else if (userAgent.includes("Edg")) {
+        browser = "Edge";
+      }
+
+      document.getElementById("result").innerText = `You are using: ${browser}`;
+    }
+  </script>
+</body>
+</html>
