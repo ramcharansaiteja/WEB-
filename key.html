@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Key Events using DOM2</title>
+</head>
+<body>
+
+<h2>Keydown and Keyup Events (DOM 2)</h2>
+
+<p>Press any alphabet key:</p>
+<input type="text" id="keyInput">
+
+<p id="keydownOutput"></p>
+<p id="keyupOutput"></p>
+
+<script>
+var inputBox = document.getElementById("keyInput");
+
+// DOM 2 event: keydown
+inputBox.addEventListener("keydown", function (event) {
+    document.getElementById("keydownOutput").innerHTML =
+        "Key pressed: " + event.key;
+});
+
+// DOM 2 event: keyup
+inputBox.addEventListener("keyup", function (event) {
+    var key = event.key;
+
+    if (key.length === 1 && key.match(/[a-zA-Z]/)) {
+        var nextKey = String.fromCharCode(key.charCodeAt(0) + 1);
+
+        document.getElementById("keyupOutput").innerHTML =
+            "Next key: " + nextKey;
+    }
+});
+</script>
+
+</body>
+</html>
