@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Over Event</title>
+</head>
+<body>
+
+<h2>Mouse Over Event using DOM 0</h2>
+
+<!-- DOM 0 mouseover event -->
+<div onmouseover="getPosition(event)"
+     style="width:300px;height:150px;border:2px solid black;">
+    Move the mouse over this box
+</div>
+
+<p id="output"></p>
+
+<script>
+function getPosition(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+
+    document.getElementById("output").innerHTML =
+        "Mouse Position → X: " + x + " , Y: " + y;
+}
+</script>
+
+</body>
+</html>
