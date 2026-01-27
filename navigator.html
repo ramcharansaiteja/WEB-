@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigator Object Properties</title>
+</head>
+<body>
+
+<h2>Navigator Object Properties</h2>
+
+<button onclick="showNavigator()">Show Properties</button>
+
+<div id="output"></div>
+
+<script>
+function showNavigator() {
+    var text = "";
+
+    for (var prop in navigator) {
+        text += prop + " : " + navigator[prop] + "<br>";
+    }
+
+    document.getElementById("output").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
