@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z-Index Mouse Over Demo</title>
+
+    <style>
+        p {
+            position: absolute;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+
+        #p1 { top: 20px;  z-index: 1; }
+        #p2 { top: 50px;  z-index: 2; }
+        #p3 { top: 80px;  z-index: 3; }
+        #p4 { top: 110px; z-index: 4; }
+    </style>
+</head>
+<body>
+
+<h2>Mouse Over Paragraph Demo</h2>
+
+<p id="p1" onmouseover="bringToFront(this)">
+    Paragraph 1: This is the first paragraph content.
+</p>
+
+<p id="p2" onmouseover="bringToFront(this)">
+    Paragraph 2: This is the second paragraph content.
+</p>
+
+<p id="p3" onmouseover="bringToFront(this)">
+    Paragraph 3: This is the third paragraph content.
+</p>
+
+<p id="p4" onmouseover="bringToFront(this)">
+    Paragraph 4: This is the fourth paragraph content.
+</p>
+
+<script>
+var topIndex = 5;
+
+function bringToFront(element) {
+    element.style.zIndex = topIndex;
+    topIndex++;
+}
+</script>
+
+</body>
+</html>
