@@ -1,0 +1,25 @@
+college {
+    display: table;
+    border-collapse: collapse;
+    margin: 20px;
+    font-family: Arial;
+}
+
+cse|student, ece|student {
+    display: table-row;
+}
+
+cse|SID, cse|Name, cse|Year,
+ece|SID, ece|Name, ece|Year {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Header */
+college::before {
+    content: "SID      Name      Year";
+    display: table-row;
+    font-weight: bold;
+    background-color: lightgray;
+}

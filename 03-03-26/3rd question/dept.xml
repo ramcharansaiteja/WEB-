@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="departments.css"?>
+
+<college xmlns:cse="http://www.college.com/cse"
+         xmlns:ece="http://www.college.com/ece">
+
+    <cse:student>
+        <cse:SID>101</cse:SID>
+        <cse:Name>Ram</cse:Name>
+        <cse:Year>3</cse:Year>
+    </cse:student>
+
+    <ece:student>
+        <ece:SID>201</ece:SID>
+        <ece:Name>joshna</ece:Name>
+        <ece:Year>2</ece:Year>
+    </ece:student>
+
+</college>

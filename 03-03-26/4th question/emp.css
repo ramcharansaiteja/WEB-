@@ -1,0 +1,24 @@
+emp|Employees {
+    display: table;
+    border-collapse: collapse;
+    margin: 20px;
+    font-family: Arial;
+}
+
+emp|Employee {
+    display: table-row;
+}
+
+emp|EmpID, emp|EmpName, emp|Department, emp|Salary, emp|Email {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Header row */
+emp|Employees::before {
+    content: "EmpID     Name     Department     Salary     Email";
+    display: table-row;
+    font-weight: bold;
+    background-color: lightgray;
+}

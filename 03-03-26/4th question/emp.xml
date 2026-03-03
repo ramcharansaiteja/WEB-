@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="employees.css"?>
+
+<!DOCTYPE emp:Employees SYSTEM "employees.dtd">
+
+<emp:Employees xmlns:emp="http://www.company.com/employee"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.company.com/employee employees.xsd">
+
+    <emp:Employee>
+        <emp:EmpID>1001</emp:EmpID>
+        <emp:EmpName>Rahul Sharma</emp:EmpName>
+        <emp:Department>HR</emp:Department>
+        <emp:Salary>45000</emp:Salary>
+        <emp:Email>rahul@company.com</emp:Email>
+    </emp:Employee>
+
+    <emp:Employee>
+        <emp:EmpID>1002</emp:EmpID>
+        <emp:EmpName>Anita Verma</emp:EmpName>
+        <emp:Department>IT</emp:Department>
+        <emp:Salary>60000</emp:Salary>
+        <emp:Email>anita@company.com</emp:Email>
+    </emp:Employee>
+
+</emp:Employees>

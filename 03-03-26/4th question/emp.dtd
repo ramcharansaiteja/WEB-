@@ -1,0 +1,8 @@
+<!ELEMENT emp:Employees (emp:Employee+)>
+<!ELEMENT emp:Employee (emp:EmpID, emp:EmpName, emp:Department, emp:Salary, emp:Email)>
+
+<!ELEMENT emp:EmpID (#PCDATA)>
+<!ELEMENT emp:EmpName (#PCDATA)>
+<!ELEMENT emp:Department (#PCDATA)>
+<!ELEMENT emp:Salary (#PCDATA)>
+<!ELEMENT emp:Email (#PCDATA)>

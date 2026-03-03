@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="students.css"?>
+
+<!DOCTYPE Students SYSTEM "students.dtd">
+
+<Students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="students.xsd">
+
+    <Student>
+        <SID>101</SID>
+        <SName>Ram charan</SName>
+        <Age>20</Age>
+        <Address>Delhi</Address>
+        <DOB>2005-02-15</DOB>
+    </Student>
+
+    <Student>
+        <SID>102</SID>
+        <SName>Tanmai</SName>
+        <Age>21</Age>
+        <Address>Mumbai</Address>
+        <DOB>2004-08-10</DOB>
+    </Student>
+
+    <Student>
+        <SID>103</SID>
+        <SName>kumari</SName>
+        <Age>19</Age>
+        <Address>Chennai</Address>
+        <DOB>2006-01-05</DOB>
+    </Student>
+
+    <Student>
+        <SID>104</SID>
+        <SName>kartikeya</SName>
+        <Age>22</Age>
+        <Address>Kolkata</Address>
+        <DOB>2003-11-25</DOB>
+    </Student>
+
+    <Student>
+        <SID>105</SID>
+        <SName>kalyani</SName>
+        <Age>20</Age>
+        <Address>Bangalore</Address>
+        <DOB>2005-06-18</DOB>
+    </Student>
+
+</Students>

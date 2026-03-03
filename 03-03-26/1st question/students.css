@@ -1,0 +1,23 @@
+Students {
+    display: table;
+    border-collapse: collapse;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+Student {
+    display: table-row;
+}
+
+SID, SName, Age, Address, DOB {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+Students::before {
+    content: "SID" "    " "Name" "    " "Age" "    " "Address" "    " "DOB";
+    display: table-row;
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
